@@ -1,14 +1,12 @@
-import PozivApi from "./components/api/PozivApi";
-import FunkcijskaForma from "./components/forma/FunkcijskaForma";
-import KlasnaForma from "./components/forma/KlasnaForma";
-import NavigacijaDrugiTip from "./components/navigacija/NavigacijaDrugiTip";
-import NavigacijaPrviTip from "./components/navigacija/NavigacijaPrviTip";
-import RoditeljskaKomponenta from "./components/roditeljdjete/RoditeljskaKomponenta";
+import { ToastContainer } from "react-toastify";
+import ObavjestKomponenta from "./components/obavjest/ObavjestKomponent";
 
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <div className="App">
-     <PozivApi/>
+     <ObavjestKomponenta/>
+     <ToastContainer/>
     </div>
   );
 }
