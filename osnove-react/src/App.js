@@ -1,3 +1,4 @@
+import PozivApi from "./components/api/PozivApi";
 import FunkcijskaForma from "./components/forma/FunkcijskaForma";
 import KlasnaForma from "./components/forma/KlasnaForma";
 import NavigacijaDrugiTip from "./components/navigacija/NavigacijaDrugiTip";
@@ -7,7 +8,7 @@ import RoditeljskaKomponenta from "./components/roditeljdjete/RoditeljskaKompone
 function App() {
   return (
     <div className="App">
-     <NavigacijaDrugiTip/>
+     <PozivApi/>
     </div>
   );
 }
