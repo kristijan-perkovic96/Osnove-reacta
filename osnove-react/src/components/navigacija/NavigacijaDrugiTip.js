@@ -15,12 +15,12 @@ class NavigacijaDrugiTip extends Component {
             <Router>
                 <Link to="/">Početna</Link><br />
                 <Link to="/Onama">O nama</Link><br />
-                <Link to="/Kontakt">Kontakt</Link><br/>
+                <Link to="/Kontakt">Kontakt</Link><br />
                 <Link to={{
-                pathname: "proizvod:10", state: {
-                   podatak:15
-                }
-            }}>Proizvod</Link>
+                    pathname: "proizvod:10", state: {
+                        podatak: 15
+                    }
+                }}>Proizvod</Link>
                 <Switch>
                     <Route exact path="/"> <Pocetna /></Route>
                     <Route exact path="/Onama"><ONama /></Route>
@@ -28,9 +28,9 @@ class NavigacijaDrugiTip extends Component {
                     <Route
                         exact path="/proizvod:id"
                         render={({
-                            match,location
+                            match, location
                         }) => (
-                            <Proizvod match={match} location={location}/>
+                            <Proizvod match={match} location={location} />
                         )}
                     />
                 </Switch>
