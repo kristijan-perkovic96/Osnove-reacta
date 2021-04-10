@@ -6,7 +6,6 @@ import ModalHeader from 'react-bootstrap/esm/ModalHeader';
 
 class KomponentaSDizajnom extends Component {
 
-
     constructor() {
         super();
         this.state = {
@@ -18,9 +17,7 @@ class KomponentaSDizajnom extends Component {
         return (
             <Modal show={true}>
                 <ModalHeader>
-                    <ModalTitle>
-                        Forma
-                </ModalTitle>
+                    <ModalTitle>Forma</ModalTitle>
                 </ModalHeader>
                 <ModalBody>
                     <Tabs
@@ -30,15 +27,11 @@ class KomponentaSDizajnom extends Component {
                             <Container>
                                 <Row>
                                     <Col className="col-6">
-                                        <FormLabel>
-                                            Ime:
-                            </FormLabel>
+                                        <FormLabel>Ime:</FormLabel>
                                         <FormControl />
                                     </Col>
                                     <Col>
-                                        <FormLabel>
-                                            Prezime:
-                            </FormLabel>
+                                        <FormLabel> Prezime: </FormLabel>
                                         <FormControl />
                                     </Col>
                                 </Row>
@@ -46,27 +39,18 @@ class KomponentaSDizajnom extends Component {
                         </Tab>
                         <Tab eventKey="objasnjenje" title="Objašnjenje">
                             <Container>
+                                <Row><p></p></Row>
                                 <Row>
-                                    <p></p>
-                                </Row>
-                                <Row>
-                                    <p>
-                                        Potrebno je unjeti ime i prezime.
-                                    </p>
+                                    <p> Potrebno je unjeti ime i prezime.</p>
                                 </Row>
                             </Container>
                         </Tab>
                     </Tabs>
-
                 </ModalBody>
                 <ModalFooter>
                     <Button variant="primary">Klikni</Button>
                 </ModalFooter>
-
-
             </Modal>
-
-
         );
     }
 }
