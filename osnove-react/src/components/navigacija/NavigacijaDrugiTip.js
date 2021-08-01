@@ -21,19 +21,17 @@ class NavigacijaDrugiTip extends Component {
                         podatak: 15
                     }
                 }}>Proizvod</Link>
-                <Switch>
-                    <Route exact path="/"> <Pocetna /></Route>
-                    <Route exact path="/Onama"><ONama /></Route>
-                    <Route exact path="/Kontakt"><Kontakt /></Route>
-                    <Route
-                        exact path="/proizvod:id"
-                        render={({
-                            match, location
-                        }) => (
-                            <Proizvod match={match} location={location} />
-                        )}
-                    />
-                </Switch>
+                <Route exact path="/"> <Pocetna /></Route>
+                <Route exact path="/Onama"><ONama /></Route>
+                <Route exact path="/Kontakt"><Kontakt /></Route>
+                <Route
+                    exact path="/proizvod:id"
+                    render={({
+                        match, location
+                    }) => (
+                        <Proizvod match={match} location={location} />
+                    )}
+                />
             </Router>
         );
     }
