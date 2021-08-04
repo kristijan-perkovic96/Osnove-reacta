@@ -1,0 +1,19 @@
+.table__cijela{
+    border: 1px solid black ;
+}
+
+.row__naslov{
+    border: 1px solid black ;
+}
+.td__naslov{
+    border: 1px solid black ;
+}
+.row__data{
+    border: 1px solid black ;
+}
+.td__data{
+    border: 1px solid black ;
+}
+.table__row{
+    border:none;
+}
