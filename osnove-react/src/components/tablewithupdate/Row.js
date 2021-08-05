@@ -1,4 +1,3 @@
-import { update } from 'idb-keyval';
 import React,{useState} from 'react';
 import './table.css';
 
